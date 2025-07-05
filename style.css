@@ -10,7 +10,7 @@ body {
     width: 80%;
     max-width: 800px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #b6acac;
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -43,12 +43,9 @@ h1, h2, h3 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 2px solid whitesmoke;
     margin: 0 auto 20px;
     object-fit: cover;
-}
-
-#profile-pic{
-    text-align: center;
 }
 
 section{
@@ -57,13 +54,6 @@ section{
     border-top: 1px solid #eee;
 }
 
-.project-card{
-    background-color: #fdfdfd;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 15px;
-}
 
 footer{
     text-align: center;
@@ -71,6 +61,22 @@ footer{
     padding-top: 20px;
     border-top: 1px solid #eee;
     font-size: 0.9em;
-    color: #777;
+    color: #041129;
+}
+
+.projects-grid {
+    display: flex; /* This is the magic line that activates Flexbox! */
+    justify-content: space-between; /*Distributes items evenly with space between them*/
+    gap: 20px; /* Adds a 20px gap between the flex items */
+}
+
+/* We'll also adjust the project card slightly to work better in a flex context */
+.project-card {
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    flex-basis: 48%; /* Each card will take up roughly 48% of the container's width */
 }
 
