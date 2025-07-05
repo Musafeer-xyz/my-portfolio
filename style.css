@@ -80,3 +80,10 @@ footer{
     flex-basis: 48%; /* Each card will take up roughly 48% of the container's width */
 }
 
+/* --- Media Query for Responsiveness --- */
+@media (max-width: 768px) {
+    .projects-grid {
+        flex-direction: column; /* Stacks the flex items vertically */
+    }
+}
+
